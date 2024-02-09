@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Objects of StudentList</h1>
+
+        {% for student in Students %}
+
+            <h2>{{student.stname}}</h2>
+
+            <!-- <a href="{{student.pk}}"><h2>{{student.stname}}</h2></a> -->
+
+        {% endfor %}
+
+    </center>
+</body>
+</html>
