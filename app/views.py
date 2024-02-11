@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 # Create your views here.
 
-from django.views.generic import ListView
+from django.views.generic import ListView,DetailView
 
 from app.models import *
 
@@ -21,4 +21,8 @@ class StudentList(ListView):
     # ordering=['stname']
     # queryset=Student.objects.filter(id=2)
     # template_name='student_list.html'
+
+class SchoolDetail(DetailView):
+    model=School
+    context_object_name='sclobject'
 

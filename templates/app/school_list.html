@@ -1,21 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+{% extends 'app/dummy.html' %}
+
+{% block title %}
+    <title>School List</title>
+{% endblock %}
+
+{% block body_block %}
+
 <body>
     <center>
         <h1>Objects of SchoolList</h1>
         
         {% for school in schools %}
 
-            <h2>{{school.sname}}</h2>
+            <!-- <h2>{{school.sname}}</h2> -->
 
-            <!-- <a href="{{school.pk}}"><h2>{{school.sname}}</h2></a> -->
+            <a href="{{school.pk}}"><h2>{{school.sname}}</h2></a>
 
         {% endfor %}
+
     </center>
-</body>
-</html>
+
+{% endblock %}
