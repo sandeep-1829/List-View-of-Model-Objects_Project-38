@@ -10,9 +10,9 @@
     <center>
         
         <h1>Detail information of {{sclobject.sname}}</h1>
-        <h2>School name is {{sclobject.sname}}</h2>
-        <h2>School Principal name is {{sclobject.sprincipal}}</h2>
-        <h2>School Location is {{sclobject.slocation}}</h2>
+        <h2>School name is : {{sclobject.sname}}</h2>
+        <h2>School Principal name is : {{sclobject.sprincipal}}</h2>
+        <h2>School Location is : {{sclobject.slocation}}</h2>
 
         <h1> Student Details Are</h1>
 
@@ -31,6 +31,8 @@
         {% endfor %}
 
         </table>
+
+    <a href="{% url 'SchoolUpdate' pk=sclobject.pk %}" class="btn btn-primary">Update School</a> 
 
     </center>
 
